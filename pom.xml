@@ -4,6 +4,7 @@
   <artifactId>HamroCart</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+	this is not good
   <dependencies>
 		<!-- MySQL Driver -->
 		<dependency>
