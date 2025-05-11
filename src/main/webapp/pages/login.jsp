@@ -4,87 +4,106 @@
 <head>
     <title>Login - HamroCart</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #74ebd5, #ACB6E5);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-        }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .login-container {
-            background-color: white;
-            padding: 30px 40px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
+    .login-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        max-width: 420px;
+        animation: slideIn 0.5s ease-out;
+    }
 
-        h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
+    @keyframes slideIn {
+        from {
+            transform: translateY(30px);
+            opacity: 0;
         }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
-        form label {
-            font-weight: 500;
-            display: block;
-            margin-bottom: 5px;
-            color: #444;
-        }
+    h2 {
+        text-align: center;
+        color: #222;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
 
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            transition: border-color 0.3s ease;
-        }
+    form label {
+        display: block;
+        margin-bottom: 6px;
+        color: #333;
+        font-size: 15px;
+        font-weight: 500;
+    }
 
-        input[type="text"]:focus,
-        input[type="password"]:focus {
-            border-color: #4CAF50;
-            outline: none;
-        }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 18px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
 
-        input[type="submit"] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+        outline: none;
+    }
 
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #667eea;
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-        .register-link {
-            text-align: center;
-            margin-top: 15px;
-            font-size: 14px;
-        }
+    input[type="submit"]:hover {
+        background-color: #5563d0;
+    }
 
-        .register-link a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .register-link {
+        text-align: center;
+        margin-top: 18px;
+        font-size: 14px;
+        color: #555;
+    }
 
-        .register-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .register-link a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+
 </head>
 <body>
     <div class="login-container">
